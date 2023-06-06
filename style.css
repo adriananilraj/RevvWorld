@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: #fff;
+    padding: 10px;
+}
+  
+.navbar-nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav .right {
+    display: flex;
+}
+  
+.nav-item {
+    margin-right: 10px;
+}
+  
+.nav-link {
+    color: #333;
+    text-decoration: none;
+    padding: 5px;
+}
+  
+.nav-link:hover {
+    color: #000;
+}
+
+/* Global CSS */
+
+.section {
+    padding: 70px 0;
+}
+
+.title-text {
+    font-size: 40px;
+    text-align: center;
+}
+
+/* End of Global CSS */
+
+/* First Section */
+.first {
+    
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(230,231,236,1) 90%);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.first .left h4 {
+    color: #971f1f;
+}
+.first .left button {
+    background-color: #db3951;
+    padding: 15px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    box-shadow: #db3951 0px 3px 15px 0px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.first .left button {
+    padding-left: 20px;
+    transition: all .3s ease-in;
+}
+.first .left button:hover {
+    background: #fff;
+    color: #db3951;
+    box-shadow: #fff 0px 3px 15px 0px;
+    border: 1px solid #db3951;
+}
+
+.first .left button span {
+    margin: 0px 0px 0px 15px
+}
+
+.first .container {
+    display: flex;
+}
+
+.first .container .left {
+    flex-basis: 50%;
+}
+.first .container .right {
+    flex-basis: 50%;
+}
+.first .container .right img {
+    width: 100%;
+}
+
+/* End of First Section */
+
+
+/* Second Section */
+
+.second {
+    background-color: #fff;
+}
+
+.benefit-box {
+    display: flex;
+    margin: 40px 0;
+}
+
+.benefit-box .benefit {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.benefit {
+    text-align: center;
+}
+
+.benefit img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.benefit h5 {
+    font-size: 20px;
+}
