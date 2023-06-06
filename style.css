@@ -58,12 +58,22 @@ body {
 .first {
     
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(230,231,236,1) 90%);
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 90%;
+    padding: 20px;
+}
+
+.first .left h1 {
+    font-size: 44px;
 }
 
 .first .left h4 {
     color: #971f1f;
+    opacity: 0.7;
+}
+
+.first .left img {
+    width: 20px;
 }
 .first .left button {
     background-color: #db3951;
@@ -92,6 +102,7 @@ body {
 
 .first .container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .first .container .left {
@@ -116,11 +127,11 @@ body {
 .benefit-box {
     display: flex;
     margin: 40px 0;
+    padding: 20px;
 }
 
 .benefit-box .benefit {
     flex-basis: 25%;
-    padding: 10px;
 }
 
 .benefit {
@@ -135,4 +146,46 @@ body {
 
 .benefit h5 {
     font-size: 20px;
+}
+
+
+.collection-box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.collection {
+    flex-basis: 50%;
+}
+
+.collection img {
+    width: 50%;
+}
+
+@media screen and (max-width: 1150px) {
+    .benefit-box {
+        flex-wrap: wrap;
+    }
+    .benefit-box .benefit {
+        flex-basis: 50%;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+    .first .container .left {
+        flex-basis: 100%;
+    }
+    .first .container .right {
+        flex-basis: 100%;
+    }
+    .benefit-box .benefit {
+        flex-basis: 100%;
+    }
+    .title-text {
+        font-size: 30px;
+        text-align: center;
+    }
 }
